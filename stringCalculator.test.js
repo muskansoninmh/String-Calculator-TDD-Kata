@@ -19,3 +19,15 @@ test(`For Input "1/n2,3"`, () => {
 test(`For Input "//;\n1;2"`, () => {
   expect(stringCalculator("//;\n1;2")).toBe(3);
 });
+
+test(`For Input "-2,2"`, () => {
+  expect(stringCalculator("-2,2")).toBe("Negative numbers not allowed");
+});
+
+test(`For Input "-2"`, () => {
+  expect(stringCalculator("-2")).toBe("Negative numbers not allowed");
+});
+
+test(`For Input "-2,-2"`, () => {
+  expect(stringCalculator("-2,-2")).toBe("Negative numbers not allowed");
+});
